@@ -1,0 +1,170 @@
+/* Styling scroll supaya kecil & transparan */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('biru.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .profile-card {
+    position: relative;
+    z-index: 1;
+    background: rgba(15, 23, 42, 0.85);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 90%;
+    max-width: 380px;
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+    margin: 40px 0;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #3498db;
+  }
+  
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #ffffff;
+  }
+  
+  .profile-info {
+    text-align: left;
+    font-size: 16px;
+    color: #d0d6db;
+    margin-top: 20px;
+  }
+  
+  .profile-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .info-item {
+    display: flex;
+    margin: 8px 0;
+    align-items: flex-start;
+  }
+  
+  .label {
+    width: 110px;
+    font-weight: 600;
+    color: #62b0e8;
+    flex-shrink: 0;
+  }
+  
+  .separator {
+    margin: 0 5px;
+    color: #ffffff;
+  }
+  
+  .value {
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
+    color: #d0d6db;
+  }
+  
+  .education {
+    margin-top: 25px;
+  }
+  
+  .education h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .education ul {
+    padding-left: 20px;
+    text-align: left;
+    list-style-type: disc;
+    color: #d0d6db;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background: #2471a3;
+  }
+  
+  /* Responsif untuk HP */
+  @media (max-width: 600px) {
+    .profile-card {
+      padding: 30px 20px;
+    }
+  
+    .profile-card h2 {
+      font-size: 24px;
+    }
+  
+    .profile-info {
+      font-size: 14px;
+    }
+  }
+  
